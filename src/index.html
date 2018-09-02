@@ -15,8 +15,8 @@
   <div class="container">
     <%= require('html-loader!./templates/header.html') %>
   </div>
-  <div class="main">
-    <div class="top-banner">
+  <main class="main" role="main">
+    <section class="top-banner">
       <picture class="image lazyload top-banner__image">
         <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./images/ufo-480.jpg" media="(max-width: 480px)" />
         <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./images/ufo-768.jpg" media="(max-width: 768px)" />
@@ -35,15 +35,15 @@
           <h3>Hi Earthmen! How are you?</h3>
         </div>
       </div>
-    </div>
+    </section>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-8">
-          <div class="content">
+        <section class="col-xs-12 col-md-8">
+          <article class="content">
             <h2>We would like to meet you, Guys!</h2>
             <p>Dear Humans, we are beings from other galaxy and we have been exploring your world for a while. You're really
               interesting. We should introduce ourselves but it's quite difficult. Let's say that we are a little like your
-              "i" number (imaginary unit). You can call us just "aliens", we like this expression. #lol</p>
+              "i" number (<a href="https://en.wikipedia.org/wiki/Imaginary_unit" target="_blank" title="Imaginary Unit - Wikipedia">imaginary unit</a>). You can call us just "aliens", we like this expression. #lol</p>
             <p>More about us you can find <a href="/about.html">here</a>
             </p>
             <h4>What's all about...</h4>
@@ -53,9 +53,9 @@
               a very short time but even for us it's hard to keep up with you...</p>
             <p>After some analysis we decide to use this tool to say hello - we have learn your language, (it can be broken
               sometimes, sorry about that) and we have created this small website. You have quite nice range of frontend
-              tutorials ;) However, we have some problem with accessibility, this WCAG docs it's so hard to understand,
+              tutorials ;) However, we have some problem with accessibility, this&nbsp;<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>&nbsp;docs it's so hard to understand,
               <strong>please help!</strong> We want to contact all of you, it has to be inclusive conversation. And it’s so hot topic
-              now next to PWA!</p>
+              now next to&nbsp;<abbr title="Progressive Web Application">PWA</abbr>!</p>
             <h4>We can look like this while relaxing:</h4>
             <picture class="image lazyload">
               <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./images/i-dont-know-how-name-this-image-480.jpg" media="(max-width: 480px)" />
@@ -67,12 +67,12 @@
                 class="lazyload img"
               />
             </picture>
-          </div>
-        </div>
+          </article>
+        </section>
         <%= require('html-loader!./templates/sidebar.html') %>
       </div>
     </div>
-  </div>
+  </main>
   <%= require('html-loader!./templates/footer.html') %>
 </body>
 
