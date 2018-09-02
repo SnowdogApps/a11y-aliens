@@ -1,0 +1,14 @@
+.footer {
+  background-color: $color-primary;
+  padding: $spacer-m 0;
+  text-align: center;
+  @include mq($md) {
+    display: flex;
+    justify-content: space-around;
+  }
+  p {
+    @include mq($md) {
+      margin-bottom: 0;
+    }
+  }
+}

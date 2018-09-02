@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: $spacer-sm $spacer-m;
+  background-color: $color-primary;
+  color: $black;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  transition: $transition;
+  border: 2px solid transparent;
+  &:hover,
+  &:focus {
+    background-color: $black;
+    color: $color-primary;
+    border: $border;
+  }
+  &--link {
+    text-decoration: none;
+    &:link,
+    &:active,
+    &:visited {
+      color: $black;
+    }
+    &:hover,
+    &:focus {
+      border: $border;
+      background-color: $black;
+      color: $color-primary;
+    }
+  }
+}

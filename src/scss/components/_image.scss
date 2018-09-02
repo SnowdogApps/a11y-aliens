@@ -1,0 +1,21 @@
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.img {
+  width: 100%;
+}
+
+.images {
+  margin-bottom: $spacer-l;
+  @include mq($md) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

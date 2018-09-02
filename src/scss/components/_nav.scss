@@ -1,0 +1,61 @@
+.nav {
+  display: none;
+  width: 100%;
+  padding-top: $spacer-l;
+  @include mq($md) {
+    display: block;
+    width: auto;
+    padding-top: 0;
+  }
+  &--open {
+    display: block;
+  }
+  &__list {
+    padding: $spacer 0;
+    margin: 0;
+    color: $black;
+    @include mq($md) {
+      background-color: $black;
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: $border;
+    }
+  }
+  &__item {
+    display: block;
+    list-style-type: none;
+    border-bottom: $border;
+    &:last-child {
+      border-bottom: 0;
+    }
+    @include mq($md) {
+      border-bottom: none;
+      ;
+    }
+  }
+  &__link {
+    display: block;
+    padding: $spacer-m $spacer-l;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-primary;
+    white-space: nowrap;
+  }
+}
+
+.nav-trigger {
+  display: block;
+  padding: $spacer-m;
+  margin-top: $spacer-l;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-l;
+  text-align: center;
+  @include mq($md) {
+    display: none;
+  }
+  &:active,
+  &:visited {
+    color: $white;
+  }
+}
