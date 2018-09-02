@@ -2,6 +2,7 @@
   background-color: $color-primary;
   padding: $spacer-m 0;
   text-align: center;
+  color: $black;
   @include mq($md) {
     display: flex;
     justify-content: space-around;

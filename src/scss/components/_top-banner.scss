@@ -2,7 +2,7 @@ $banner-width: 100%;
 .top-banner {
   position: relative;
   width: $banner-width;
-  height: 300px;
+  height: 400px;
   background-color: transparent;
   overflow: hidden;
   @include mq($md) {
@@ -16,11 +16,28 @@ $banner-width: 100%;
     z-index: -1;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
+    @include mq(480px) {
+      top: 20%;
+    }
+    @include mq($sm) {
+      top: 0;
+    }
+    @include mq($md) {
+      top: 15%;
+    }
+    @include mq($lg) {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__content {
     padding: $spacer-l;
+  }
+  &__subtitle {
+    @include mq($md) {
+      width: 38%;
+    }
   }
   h1 {
     margin-bottom: $spacer-l;
