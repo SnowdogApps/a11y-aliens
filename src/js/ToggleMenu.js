@@ -5,6 +5,7 @@ export default class {
     this.navMenu = document.querySelector('.nav'),
     this.openClass = 'nav--open';
     this.init();
+    this.setNavVisibility();
   }
   init () {
     this.menuTrigger.addEventListener('click',
