@@ -1,9 +1,15 @@
 .logo {
   width: 100%;
+  @include mq($md) {
+    width: 128px;
+  }
+  &__link {
+    display: block;
+  }
   &__image {
     height: 80px;
     @include mq($md) {
-      width: auto;
+      width: 80px;
       margin: 0 0 0 24px;
     }
   }

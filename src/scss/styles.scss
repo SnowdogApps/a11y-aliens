@@ -2,6 +2,7 @@
 @import 'base/normalize';
 @import '~flexboxgrid2';
 @import 'base/var';
+@import 'base/focus';
 @import 'base/typography';
 @import 'mixin/mq';
 
@@ -15,6 +16,11 @@
 @import 'components/nav';
 @import 'components/top-banner';
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 body {
   font-size: $font-size-base;
   font-family: 'Orbitron', sans-serif;
