@@ -5,6 +5,7 @@
   padding: $spacer-sm $spacer-m;
   background-color: $color-primary;
   color: $black;
+  font-family: $font-family-base;
   font-weight: $font-weight-bold;
   text-align: center;
   transition: $transition;
@@ -27,6 +28,19 @@
       border: $border;
       background-color: $black;
       color: $color-primary;
+    }
+  }
+  &--skip {
+    @include visually-hidden($usePseudo: focus);
+    font-size: $font-size-base;
+    padding: 20px;
+    appearance: none;
+    &:focus,
+    &:active {
+      position: absolute;
+      width: 100%;
+      background-color: $color-primary;
+      color: $black;
     }
   }
 }

@@ -13,7 +13,9 @@ import './scss/styles.scss';
 // js
 import lazysizes from 'lazysizes';
 import ToggleMenu from './js/ToggleMenu';
+import skipNav from './js/skipNav';
 
 new ToggleMenu();
+skipNav();
 lazysizes;
 
