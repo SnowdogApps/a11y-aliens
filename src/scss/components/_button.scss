@@ -38,6 +38,8 @@
     &:focus,
     &:active {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       background-color: $color-primary;
       color: $black;
