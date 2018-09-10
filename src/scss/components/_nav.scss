@@ -47,7 +47,10 @@
 .nav-trigger {
   display: block;
   padding: $spacer-m;
-  margin-top: $spacer-l;
+  margin: $spacer-l auto 0;
+  background-color: $black;
+  color: $white;
+  border-bottom: 1px solid $white;
   font-weight: $font-weight-bold;
   font-size: $font-size-l;
   text-align: center;
