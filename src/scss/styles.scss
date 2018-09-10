@@ -5,6 +5,7 @@
 @import 'base/focus';
 @import 'base/typography';
 @import 'mixin/mq';
+@import 'mixin/visually-hidden';
 
 // components
 @import 'components/button';
@@ -23,7 +24,7 @@
 }
 body {
   font-size: $font-size-base;
-  font-family: 'Orbitron', sans-serif;
+  font-family: $font-family-base;
   color: white;
   background-color: black;
   transition: all 0.5s;
