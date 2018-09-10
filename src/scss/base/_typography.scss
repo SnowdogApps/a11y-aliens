@@ -6,7 +6,7 @@
 
 h1 {
   @extend .heading;
-  font-size: 32px;
+  font-size: $font-size-xl;
 }
 
 h2 {
@@ -16,26 +16,27 @@ h2 {
 
 h3 {
   @extend .heading;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h4 {
   @extend .heading;
-  font-size: 20px;
+  font-size: $font-size-l;
 }
 
 h5 {
   @extend .heading;
-  font-size: 18px;
+  font-size: $font-size-m;
 }
 
 h6 {
   @extend .heading;
-  font-size: 17px;
+  font-size: $font-size-sm;
 }
 
 p {
   margin: 0 0 2em;
+  font-size: $font-size-sm;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
   word-spacing: $word-spacing;
